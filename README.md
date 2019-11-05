@@ -43,7 +43,7 @@
 -belomgs_to :groupe
 
 ## groupsテーブル
-｜colume｜Type｜Option|
+|colume|Type|Option|
 |-------|-----|------|
 |id|integer|null:false|
 |groupe_name|string|null:false|
