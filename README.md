@@ -2,7 +2,7 @@
 
 ## usersテーブル
 
-｜colume｜Type｜Option|
+|colume|Type|Option|
 |-------|-----|------|
 |id|integer|null:false|
 |name|string|null: false|
@@ -18,7 +18,7 @@
 
 ## groups_userstテーブル
 
-|Colume｜Type｜Option|
+|Colume|Type|Option|
 |-------|-----|------|
 |id|string|null: false|
 |user_id|integer|null :false foreign_key: true|
@@ -29,7 +29,7 @@
 -belongs_to :group
 
 ## massegesテーブル
-｜colume｜Type｜Option|
+|colume|Type|Option|
 |-------|-----|------|
 |id|integer|null:false|
 |content|text|null:false|
