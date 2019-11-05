@@ -32,7 +32,7 @@
 |colume|Type|Option|
 |-------|-----|------|
 |id|integer|null:false|
-|content|text|null:false|
+|content|text|
 |image|string|
 |user_id|integer|null: false, foreign_key: true|
 |groupe_id|integer|null: false, foreign_key: true||
@@ -46,7 +46,7 @@
 |colume|Type|Option|
 |-------|-----|------|
 |id|integer|null:false|
-|groupe_name|string|null:false|
+|name|string|null:false|
 |user_id|integer|null:false
 |created_at|datetime|null:false|
 
