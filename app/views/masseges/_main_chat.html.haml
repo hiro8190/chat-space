@@ -9,21 +9,21 @@
       Edit
       
   .main_chat_middle
-    .post_date
-      .user_name_main
+    .post_info
+      .post_info__name
         ユーザー名
-      .date
+      .post_info__date
         2019/11/06
     .post 
       This is a first massege
 
   .main_chat_bottom
-    .text_box
+    .input_box
       %label
-        %input.textbox{placeholder: "type a massege", class: "input_box"}
+        %input.textbox{placeholder: "type a massege", class: "input_box__text"}
       %label
-        %i.fa.fa-image{class: "input_icon"}
-        %input{type: "file", class: "input_file"}
+        %i.fa.fa-image{class: "input_box__icon"}
+        %input{type: "file", class: "input_box__file"}
     .text_send
       Send
 
