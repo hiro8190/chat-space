@@ -8,31 +8,29 @@
   width: 300px;
 }
 
-.side_bar_top{
+.user_box{
   background-color: #253141;
   display: flex;
   justify-content: space-between;
   height: 100px;
   line-height: 100px;
+  &__name{
+    color: $fontWhite;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  &__btn{
+    display: block;
+    padding-right: 20px;
+  }
 }
 
-.user_name_bar{
-  color: $fontWhite;
-  margin-left: 20px;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.side_bar__btn{
-  display: block;
-  padding-right: 20px;
-}
-
-.side_bar__btn--edit{
+.user_box__btn--edit{
   color: $fontWhite;
   font-size: 15px;
 }
-.side_bar__btn--setting{
+.user_box__btn--setting{
   color: $fontWhite;
   font-size: 15px;
 }
@@ -42,7 +40,7 @@
   height: calc(100vh - 90px);
 }
 
-.groupe_name_bar{
+.groupe_name{
   color: $fontWhite;
   padding-left: 20px;
   font-size: 15px;
@@ -72,18 +70,16 @@
 
 .groupe_box{
   padding-left: 40px;
-}
-
-.groupe_name_main{
-  font-size: 20px;
-  color: #333333;
-  padding-top: 35px;
-  padding-bottom: 15px;
-}
-
-.member{
-  font-size: 12px;
-  color: #999999;
+  &__name{
+    font-size: 20px;
+    color: #333333;
+    padding-top: 35px;
+    padding-bottom: 15px;
+  }
+  &__member{
+    font-size: 12px;
+    color: #999999;
+  }
 }
 
 .groupe_edit{
