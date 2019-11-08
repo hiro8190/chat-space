@@ -1,11 +1,11 @@
 .side_bar
   .user_box
     .user_box__name
-      ユーザー名
+      = current_user.name
     .user_box__btn
       =link_to "#", class: "user_box__btn--edit" do
         .i.fa.fa-edit 
-      =link_to "#", class: "user_box__btn--setting" do
+      =link_to edit_user_path(current_user), class: "user_box__btn--setting" do
         .i.fa.fa-cog
   
   .side_bar_bottom
