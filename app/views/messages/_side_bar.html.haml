@@ -3,7 +3,7 @@
     .user_box__name
       = current_user.name
     .user_box__btn
-      =link_to "#", class: "user_box__btn--edit" do
+      =link_to new_group_path, class: "user_box__btn--edit" do
         .i.fa.fa-edit 
       =link_to edit_user_path(current_user), class: "user_box__btn--setting" do
         .i.fa.fa-cog

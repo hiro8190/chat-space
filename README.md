@@ -28,7 +28,7 @@
 -belongs_to :user  
 -belongs_to :group
 
-## massegesテーブル
+## messagesテーブル
 |colume|Type|Option|
 |-------|-----|------|
 |id|integer|null:false|
