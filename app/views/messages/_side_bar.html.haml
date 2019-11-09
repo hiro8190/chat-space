@@ -1,0 +1,17 @@
+.side_bar
+  .user_box
+    .user_box__name
+      = current_user.name
+    .user_box__btn
+      =link_to new_group_path, class: "user_box__btn--edit" do
+        .i.fa.fa-edit 
+      =link_to edit_user_path(current_user), class: "user_box__btn--setting" do
+        .i.fa.fa-cog
+  
+  .side_bar_bottom
+    - current_user.groups.each do |group|
+      .groups
+        = link_to '#', class: "group_name" do
+          = group.name
+        .group_message
+          まだ投稿されていません   
