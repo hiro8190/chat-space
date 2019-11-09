@@ -22,7 +22,7 @@
 |-------|-----|------|
 |id|string|null: false|
 |user_id|integer|null :false foreign_key: true|
-|groupe_id|integer|null :false foreign_key: true|
+|group_id|integer|null :false foreign_key: true|
 
 ### Association
 -belongs_to :user  
@@ -35,12 +35,12 @@
 |content|text|
 |image|string|
 |user_id|integer|null: false, foreign_key: true|
-|groupe_id|integer|null: false, foreign_key: true||
+|group_id|integer|null: false, foreign_key: true||
 |created_at|datetime|null:false|
 
 ### Association
 -belongs_to :user  
--belomgs_to :groupe
+-belomgs_to :group
 
 ## groupsテーブル
 |colume|Type|Option|

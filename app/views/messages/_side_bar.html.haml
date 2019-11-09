@@ -9,7 +9,9 @@
         .i.fa.fa-cog
   
   .side_bar_bottom
-    .groupe_name
-      グループ名
-    .newpost
-      まだ投稿されていません   
+    - current_user.groups.each do |group|
+      .groups
+        = link_to '#', class: "group_name" do
+          = group.name
+        .group_message
+          まだ投稿されていません   

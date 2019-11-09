@@ -1,13 +1,13 @@
 .main_chat
   .main_chat_top
-    .groupe_box
-      .groupe_box__name
+    .group_box
+      .group_box__name
         グループ名
-      .groupe_box__member
+      .group_box__member
         メンバー
-    .groupe_edit
-      Edit
-      
+    .group_edit
+      = link_to  edit_group_path(current_user), class: 'btn group_edit--btn' do
+        Edit
   .main_chat_middle
     .post_info
       .post_info__name

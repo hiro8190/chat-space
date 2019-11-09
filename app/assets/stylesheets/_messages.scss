@@ -40,7 +40,7 @@
   height: calc(100vh - 90px);
 }
 
-.groupe_name{
+.group_name{
   color: $fontWhite;
   padding-left: 20px;
   font-size: 15px;
@@ -48,7 +48,7 @@
   padding-top: 20px;
 }
 
-.newpost{
+.group_message{
   color: $fontWhite;
   padding-left: 20px;
   font-size: 11px;
@@ -68,7 +68,7 @@
   border-bottom: #eeeeee;
 }
 
-.groupe_box{
+.group_box{
   padding-left: 40px;
   &__name{
     font-size: 20px;
@@ -82,7 +82,7 @@
   }
 }
 
-.groupe_edit{
+.group_edit--btn{
  height: 40px;
  line-height: 40px;
  padding: 0 20px;
@@ -92,6 +92,7 @@
  right: 40px;
  color: skyblue;
  font-weight: bold;
+ text-decoration: none;
 }
 
 .main_chat_middle{
