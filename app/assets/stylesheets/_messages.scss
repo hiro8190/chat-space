@@ -1,11 +1,15 @@
 .wrapper{
-  height: 100vh;
-  width: 100vw;
   display: flex;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .side_bar{
   width: 300px;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .user_box{
@@ -19,6 +23,7 @@
     margin-left: 20px;
     font-size: 16px;
     font-weight: bold;
+    text-decoration: none;
   }
   &__btn{
     display: block;
@@ -37,7 +42,8 @@
 
 .side_bar_bottom{
   background-color: #2f3e51;
-  height: calc(100vh - 90px);
+  height: calc(100vh - 120px);
+  padding-top: 20px;
 }
 
 .group_name{
@@ -45,6 +51,7 @@
   padding-left: 20px;
   font-size: 15px;
   font-weight: bold;
+  text-decoration: none;
   padding-top: 20px;
 }
 
@@ -55,10 +62,15 @@
   font-weight: bold;
   padding-bottom: 40px;
   line-height: 2;
+  display: block;
+  text-decoration: none;
 }
   
 .main_chat{
   width: calc(100vw - 300px);
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .main_chat_top{
@@ -94,17 +106,16 @@
  font-weight: bold;
  text-decoration: none;
 }
-
-.main_chat_middle{
-  background-color: #fafafa;
+.messages{
   height: calc(100vh - 190px);
+  background-color: #FAFAFA;
 }
 
-.post_info{
+.upper-message{
   display: flex;
   padding-top: 46px;
   padding-left: 40px;
-  &__name{
+  &__user-name{
     font-size: 16px;
     color: $fontGray;
     font-weight: bold;
@@ -118,50 +129,57 @@
   }
 }
 
-.post{
+.lower-message__content{
   padding-left: 40px;
   font-size: 14px;
   color: $fontGray;
   margin-top: 10px;
 }
 
-.main_chat_bottom{
+.form{
   height: 90px;
   background-color: #ddd;
   display: flex;
   justify-content: space-between;
-}
-
-.input_box{
-  padding-left: 40px;
+  padding-left: 38px;
   line-height: 90px;
   font-size: 16px;
-  color: $fontGray;
-  &__text{
-    width: calc(100vw - 540px);
+  color: $fontGray; 
+  &__message{
+    width: calc(100vw - 530px);
     height: 50px;
     padding-left: 10px;
     padding-right: 30px;
   }
-  &__icon{
+  &__submit{
+    height: 50px;
+    line-height: 50px;
+    padding: 0 30px;
+    border: solid 1px skyblue;
     position: absolute;
-    right: 170px;
-    bottom: 35px;
+    right: 40px;
+    bottom: 20  px;
+    background-color: #38aef0;
+    font-weight: bold;
+    margin-top: 20px;
+    border-style: none;
+    color: white;
   }
-  &__file{
+}
+
+.form__image{
+  &--icon{
+    position: absolute;
+    right: 160px;
+    bottom: 30px;
+    font-size: 25px;;
+  }
+  &--hidden{
     display: none;
   }
 }
 
-.text_send{
- height: 48px;
- line-height: 48px;
- padding: 0 30px;
- border: solid 1px skyblue;
- position: absolute;
- right: 40px;
- background-color: #38aef0;
- font-weight: bold;
- color: white;
- margin-top: 20px;
-}
+
+
+
+

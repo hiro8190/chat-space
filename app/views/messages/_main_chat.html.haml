@@ -2,27 +2,23 @@
   .main_chat_top
     .group_box
       .group_box__name
-        グループ名
+        = @group.name
       .group_box__member
-        メンバー
+        Member:
+        - @group.group_users.each do |group_user|
+          = group_user.user.name
     .group_edit
       = link_to  edit_group_path(current_user), class: 'btn group_edit--btn' do
         Edit
-  .main_chat_middle
-    .post_info
-      .post_info__name
-        ユーザー名
-      .post_info__date
-        2019/11/06
-    .post 
-      This is a first message
 
-  .main_chat_bottom
-    .input_box
-      %label
-        %input.textbox{placeholder: "type a message", class: "input_box__text"}
-      %label
-        %i.fa.fa-image{class: "input_box__icon"}
-        %input{type: "file", class: "input_box__file"}
-    .text_send
-      Send
+  .messages
+    = render partial: 'message', collection: @messages
+
+  .form
+    = form_for [@group, @message] do |f|
+      = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+      = f.label :image, class: 'form__image' do
+        = icon('fas', 'image', class: 'form__image--icon')
+        = f.file_field :image, class: 'form__image--hidden'
+      = f.submit 'Send', class: 'form__submit'
+          

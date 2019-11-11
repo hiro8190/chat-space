@@ -11,7 +11,7 @@
   .side_bar_bottom
     - current_user.groups.each do |group|
       .groups
-        = link_to '#', class: "group_name" do
+        = link_to group_messages_path(group), class: "group_name" do
           = group.name
-        .group_message
-          まだ投稿されていません   
+        = link_to group_messages_path(group), class: "group_message" do
+          = group.show_last_message  
