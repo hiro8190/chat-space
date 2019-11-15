@@ -44,6 +44,7 @@
   background-color: #2f3e51;
   height: calc(100vh - 120px);
   padding-top: 20px;
+  overflow: scroll;
 }
 
 .group_name{
@@ -109,6 +110,7 @@
 .messages{
   height: calc(100vh - 190px);
   background-color: #FAFAFA;
+  overflow: scroll;
 }
 
 .upper-message{
@@ -135,6 +137,9 @@
   color: $fontGray;
   margin-top: 10px;
 }
+.lower-message__image{
+  padding-left: 40px;
+}
 
 .form{
   height: 90px;
@@ -145,6 +150,7 @@
   line-height: 90px;
   font-size: 16px;
   color: $fontGray; 
+  position: relative;
   &__message{
     width: calc(100vw - 530px);
     height: 50px;
@@ -158,7 +164,7 @@
     border: solid 1px skyblue;
     position: absolute;
     right: 40px;
-    bottom: 20  px;
+    bottom: 20 px;
     background-color: #38aef0;
     font-weight: bold;
     margin-top: 20px;
