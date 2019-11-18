@@ -2,11 +2,7 @@ $(function(){
   
   function buildMessage(message){
     
-    if (message.image.url !== null){
-      var image = message.image.url;
-    }else{
-      var image = '';
-    }
+    var image = message.image.url ? message.image.url : '';
   
     var html = `<div class="message" data-message-id="${message.id}">
                   <div class="upper-message">
